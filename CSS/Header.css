@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 3px 8px rgb(148, 140, 140);
+    --border: 16px solid rgba(0, 0, 0, 1);
+    --outline: 1px solid rgba(0, 0, 0, 1);
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 500; /* It's hide overflow of Heading */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .logo i {
+    color: var(--green);
+    margin-right: 5px;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    /* Aling items properly in centre use line height property */
+    border-radius: .5rem;
+    background-color: rgb(231, 229, 229);
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    background-color: var(--black);
+    color: white;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    /*  right: -110%; right ko -ve me karne se search box main container se bahar chla jata hai isse hame display hide karen ki jarurt nhi padti hai */
+    width: 50vw;
+    height: 4.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    overflow: hidden;
+    /* For mobile display use display flex , flex means flexible*/
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: var(--black);
+    padding: 0 1rem;
+}
+
+.header .search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.4rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: green;
+}
+
+.header .search-form.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .shopping-cart {
+    /* border: 2px solid rebeccapurple; */
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 28rem;
+    background-color: white;
+}
+
+.header .shopping-cart .box {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+    /*top-bottom 1rem and left and right 0 */
+
+}.header .shopping-cart .box img {
+    height: 8rem;
+    width: 8rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--green);
+}
+
+.header .shopping-cart .box .content h3 {
+    color: var(--black);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+.header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+.header .shopping-cart.active{
+    /* It's not work .header .shopping-cart:active or shopping-cart  .active  */
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .login-form{
+    border: 0;
+    width: 30rem;
+    position: absolute;
+    top: 110%;
+      /* Login form agr ache se visible na ho to right wale property ko kam ya jyada karke fixed krenge. Aur ye problem width me changes karne se hoti hai. */
+    right: -80%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color:white;
+    text-align: center;
+}
+.header .login-form  h3{
+font-size: 2.3rem;
+text-transform: uppercase;
+color: var(--black);
+}
+.header .login-form .box{
+    border: 0;
+    margin: 0.7rem;
+    width: 100%;
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font: 1.4rem;
+    padding: 0.5rem;
+    color: var(--light-color);
+}
+
+.header .login-form p a{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.header .login-form.active {
+    /* Login form agr ache se visible na ho to right wale property ko kam ya jyada karke fixed krenge. Aur ye problem width me changes karne se hoti hai. */
+  right: 2rem;
+  transition: 0.2s linear;
+}

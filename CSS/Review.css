@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 3px 8px rgb(148, 140, 140);
+    --border: 16px solid rgba(0, 0, 0, 1);
+    --outline: 1px solid rgba(0, 0, 0, 1);
+
+}
+.review .box-container {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 20px;
+}
+
+.review .box-container .box {
+    /* border: 2px solid blueviolet; */
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    background: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.review .box-container .box .box-img {
+    /* border: 2px solid yellow; */
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.review .box-container .box .box-img img {
+    width: 100%;
+    height: 95%;
+    border-radius: 50%;
+}
+.review .box-container .box p{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 30%;
+    line-height: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.review .box-container .box h2{
+    margin-top: 10px;
+}
+
+.box:hover {
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.box .stars i {
+    font-size: 1.7rem;
+    color: orange;
+    padding: .5rem 0;
+    margin-top: 4px;
+}

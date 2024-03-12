@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 3px 8px rgb(148, 140, 140);
+    --border: 16px solid rgba(0, 0, 0, 1);
+    --outline: 1px solid rgba(0, 0, 0, 1);
+
+}
+.categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax( 25rem ,  1fr));
+    gap: 1.5rem;
+}
+
+.categories .box-container .box{
+    padding: 3rem 2rem ;
+    background-color: white;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.categories .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px  var(--green);
+}
+.box-container .box img{
+    margin: 1rem 0 ;
+    height: 15rem;
+}
+.categories .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--black);
+}
+.categories .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding-bottom: 1rem 0 ;
+}

@@ -1,0 +1,55 @@
+/* Apply Media Query for responsive */
+@media(max-width:991px){
+    html {
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    
+    .header .navbar{
+        position: absolute;
+       top: 110%;
+       right:-110%;
+       width: 30rem;
+       box-shadow: var(--box-shadow);
+       border-radius: .5rem;
+       background-color: white;
+    }
+    #menu-btn {
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+     .header .search-form {   width: 90%;
+     }
+    .header .navbar a{
+       font-size:2rem;
+       margin: 2rem 2.5rem;
+       display: block;
+    }
+}
+@media(max-width:450px){
+    html {
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .footer{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .review .box-container .box{
+        height: 100%;
+    }
+    .review .box-container .box .box-img{
+        width: 55%;
+        height: 40%;
+    }
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+    padding-bottom: 2.5rem;
+}
+.heading span{
+    background-color: var(--green);
+    color:white;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%, 100% 99% , 0% 100%, 7% 50% , 0% 0%);
+}

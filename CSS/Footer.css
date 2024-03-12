@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+    --light-color: #666;
+}
+
+.footer {
+    background: #ffff;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box .share a{
+    /* border: 2px solid black; */
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    color: var(--black);
+    margin-left: 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover{
+    background-color: var(--black);
+    color: white;
+}
+.footer .box-container .box  .links{
+    display: block;
+    color: var(--light-color);
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.3rem;
+    color:var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: green;
+}
+
+.footer .box-container .box .links:hover {
+    color: var(--light-color);
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    color: var(--light-color);
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+}
+.footer .box-container .box .links i{
+    color: var(--green);
+    padding-right: 0.5rem;
+}
+.footer .box-container .box .email{
+    margin: 0.7rem 0 ;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: var(--black);
+    text-transform: none;
+}

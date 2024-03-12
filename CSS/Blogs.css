@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+    --light-color: #666;
+}
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax( 25rem ,  1fr));
+    gap: 1.5rem;
+}
+.blogs .box-container .box{
+    border-radius: .5rem;
+    background: white;
+}
+.blogs .box-container .box img{
+    width: 100%;
+    height:45%;
+}
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+.blogs .box-container .box .content .icons{
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: .8rem;
+    border-bottom:1px solid rgb(189, 185, 185);
+}
+.blogs .box-container .box .content .icons a{
+    color:var(--light-color);
+    font-size: 1rem;
+}
+.blogs .box-container .box .content .icons a:hover{
+    color:var(--black);
+}
+.blogs .box-container .box .content .icons a i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+.blogs .box-container .box .content h3{
+    line-height:1.8rem;
+    color: black;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+.blogs .box-container .box .content p{
+    line-height: 1.6rem;
+    color:var(--light-color);
+    font-size: 1.3rem;
+    padding: .5rem 0;
+}

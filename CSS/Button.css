@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+    --black: #130f40;
+}
+.btn {
+    border: 1px solid var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: var(--black);
+    /* background:none; */
+}
+.btn:hover{
+    color:white;
+    background-color: var(--green);   
+}
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin-top:1rem 0 ;
+}

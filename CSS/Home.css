@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+:root {
+    /* Pseudo :root is used to select the highest-level parent of a given specification. */
+    --green: rgb(3, 155, 3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    scroll-behavior:smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: #eee;
+    overflow-x: hidden;
+}
+
+/* Banner Css */
+section{
+    padding:2rem 9%;
+}
+
+.home{
+    display: flex;
+    justify-content: center; 
+    background: url(../img/HomeImg.jpg);
+    background-position:center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+}
+
+.home .content {
+    width: 60rem;
+    text-align: center;
+}
+
+.home .content h3{
+    color:white;
+    font-size: 3rem;
+}
+.home a {
+    background-color: white;
+    font-size: 1.5rem;
+}
+.home .content h3 span{
+   color: var(--green);
+  
+}
+
+.home .content p{
+    color:white;
+    font-size: 1.5rem;
+    padding: 1.4rem 0;
+    line-height: 1.6;
+}
